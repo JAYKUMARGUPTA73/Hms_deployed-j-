@@ -1,9 +1,26 @@
 {
+  "name": "hms",
+  "version": "1.0.0",
+  "description": "hms is easy hostel management web app for NIT Kurukshetra",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"cd server/client && npm start\" \"cd server && npm start\"",
+    "server":"nodemon index.js",
+    "build":"npm install --prefix ./client && npm run build --prefix ./client && npm install"
+    
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JAYKUMARGUPTA73/Hms_deployed-j-.git"
+  },
+  "author": "Jay Kumar Gupta, Ansh Goel, Yash Raj Vishnoi, Sachin Kumar, Vinit",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JAYKUMARGUPTA73/Hms_deployed-j-/issues"
+  },
+  "homepage": "https://github.com/JAYKUMARGUPTA73/Hms_deployed-j-#readme",
   "devDependencies": {
     "concurrently": "^8.2.2"
-  },
-  "scripts": {
-    "build": "concurrently \"cd server/client && npm start\" \"cd server && npm start\""
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.5.1",
